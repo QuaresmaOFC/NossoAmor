@@ -1,0 +1,90 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background: #ff4d6d;
+    color: white;
+    padding: 20px;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.contador, .mensagem, .galeria, .depoimentos {
+    padding: 20px;
+}
+
+h2 {
+    color: #ff4d6d;
+    margin-bottom: 15px;
+}
+
+#tempo-juntos {
+    font-size: 1.5em;
+    font-weight: bold;
+    background: #ffccd5;
+    padding: 15px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.galeria .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.galeria img, .galeria video {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.galeria img:hover, .galeria video:hover {
+    transform: scale(1.05);
+}
+
+.depoimentos blockquote {
+    font-size: 1.5em;
+    font-style: italic;
+    background: #ffe5ec;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+footer {
+    background: #ff4d6d;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .galeria .grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galeria img, .galeria video {
+        width: 90%;
+    }
+}
